@@ -1,0 +1,31 @@
+def addition(x,y):#function defination
+    #print(x+y)
+    return(x+y)
+def substract(x,y):
+    print(x-y)
+def multiply(x,y):
+    print(x*y)
+def divide(x,y):
+    print(x/y)
+
+print('''enter your first choice:-
+          1 for addition
+          2 for substract
+          3 for multiply
+          4 for divide''')
+x=int(input(" enter first number : "))
+y=int(input("enter second number : "))
+
+choice=int(input("enter your choice : "))
+
+if choice==1:
+    print(" addition of two numbers is",addition(x,y))
+    
+elif choice==2:
+    substract(x,y)
+elif choice==3:
+    multiply(x,y)
+elif choice==4:
+    divide(x,y)
+else:
+    print(" invalid choice, please select from 1 to 4 option")
